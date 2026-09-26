@@ -1,0 +1,123 @@
+# Portfolio ARIA / structure snapshot
+url: http://127.0.0.1:4310/
+title: Ali / al0ke — Cybersecurity Portfolio
+
+## Headings
+- Ali.
+- Current focus
+- ACC LAN Cyber Security
+- MCP / skill hardening
+- SOC / cyber roles
+- School + career systems
+- Selected case studies
+- MCP / Agent Skill Security Audit
+- MCP Secret Leak Check
+- Hermes
+- Prism OSINT
+- Content Empire (archive)
+- Recent role
+- IT Risk Analyst Intern
+- Say hello
+
+## Links (first 40)
+- "al0ke_" → /
+- "Now" → /#now
+- "Work" → /#work
+- "Experience" → /#experience
+- "Contact" → /#contact
+- "github/al0ke" → https://github.com/al0ke
+- "Selected work" → /#work
+- "What I'm doing now" → /#now
+- "2026MCP / Agent Skill Security AuditPortable defensive audit skill for MCP configs and agent skills — leaky tools, overbroad permissions, injected instructions.Case study →" → /work/mcp-skill-audit
+- "2026MCP Secret Leak CheckFree companion mini-skill — a secrets-only sniff test for MCP configs and skill files.Case study →" → /work/mcp-secret-leak
+- "2026HermesAI/ops agent work for research, triage, and secure automation — private tooling, public write-up.Case study →" → /work/hermes
+- "2026Prism OSINTOSINT investigation workspace — modules, analysis, and operator-facing dashboards.Case study →" → /work/prism
+- "2026Content Empire (archive)Former multi-agent content automation experiment — archived, not current work.Archive →" → /work/content-empire
+- "Emailalifarttoosi98@gmail.com" → mailto:alifarttoosi98@gmail.com
+- "GitHub/al0ke" → https://github.com/al0ke
+- "X/0xal0ke" → https://x.com/0xal0ke
+- "GitHub" → https://github.com/al0ke
+- "X" → https://x.com/0xal0ke
+- "Work" → /#work
+
+## Body excerpt
+- al0ke_
+- Now
+- Work
+- Experience
+- Contact
+- github/al0ke
+- PORTFOLIO / AL0KE
+- Ali.
+- Cybersecurity student building practical AI agent skills and MCP hardening tools.
+- ACC LAN Cyber Security in Austin. Seeking SOC and cyber roles — with selected write-ups on agent security and prior CSOC work.
+- Selected work
+- What I'm doing now
+- AUSTIN, TEXAS
+- ACC LAN CYBER SECURITY
+- CSOC IT RISK ANALYST (TEXAS AGENCY)
+- MCP / AGENT SKILL HARDENING
+- SEEKING SOC / CYBER ROLES
+- NOW
+- Current focus
+- Living status, not a static resume dump. School, MCP skill work, and the SOC / cyber search — honest and current.
+- SCHOOL
+- ACC LAN Cyber Security
+- Cybersecurity student at Austin Community College (LAN Cyber Security track), based in Austin.
+- BUILDING
+- MCP / skill hardening
+- Building AI agent skills for MCP and skill hardening — free secrets sniff check plus a full defensive audit skill ($49 draft).
+- SEEKING
+- SOC / cyber roles
+- Looking for SOC and cybersecurity roles. Recent experience with a Texas agency CISO office (CSOC).
+- SYSTEMS
+- School + career systems
+- Keeping coursework, applications, and this portfolio aligned as the employer-facing source of truth.
+- WORK
+- Selected case studies
+- Each project has a problem → approach → outcome page. Public Code links only appear when the GitHub repo is actually public.
+- 2026
+- MCP / Agent Skill Security Audit
+- Portable defensive audit skill for MCP configs and agent skills — leaky tools, overbroad permissions, injected instructions.
+- Case study →
+- 2026
+- MCP Secret Leak Check
+- Free companion mini-skill — a secrets-only sniff test for MCP configs and skill files.
+- Case study →
+- 2026
+- Hermes
+- AI/ops agent work for research, triage, and secure automation — private tooling, public write-up.
+- Case study →
+- 2026
+- Prism OSINT
+- OSINT investigation workspace — modules, analysis, and operator-facing dashboards.
+- Case study →
+- ARCHIVE
+- Past experiments kept for context — not current Now work.
+- 2026
+- Content Empire (archive)
+- Former multi-agent content automation experiment — archived, not current work.
+- Archive →
+- EXPERIENCE
+- Recent role
+- Internship work at a Texas agency CISO office (CSOC) — framed at the agency level only.
+- IT Risk Analyst Intern
+- Texas agency CISO office — CSOC
+- Jun 2026 — Aug 2026
+- Monitored security alerts and events in the CSOC SIEM, triaging and escalating potential incidents.
+- Conducted IT risk assessments and vulnerability scans across infrastructure and applications.
+- Assisted with security audit preparation, compliance documentation, and NIST/CIS control mapping.
+- Collaborated on threat intelligence, incident response playbooks, and remediation tracking.
+- Developed automation scripts to streamline alert triage and reporting workflows.
+- CONTACT
+- Say hello
+- Open to SOC, cybersecurity, and agent-security conversations — roles, collaborations, and thoughtful feedback on the work.
+- Email
+- alifarttoosi98@gmail.com
+- GitHub
+- /al0ke
+- X
+- /0xal0ke
+- © 2026 Ali / al0ke
+- GitHub
+- X

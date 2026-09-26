@@ -26,6 +26,20 @@ npm run build
 npm start
 ```
 
+## Verify (agents)
+
+Project-local skill: [`.cursor/skills/verify-portfolio/SKILL.md`](./.cursor/skills/verify-portfolio/SKILL.md).
+
+```bash
+npm install
+npx playwright install chromium
+npm run verify -- launch --port 4310
+npm run verify -- doctor
+npm run verify -- cleanup
+```
+
+Proof artifacts land in `.cursor/skills/verify-portfolio/artifacts/` and survive cleanup.
+
 ## Content rules
 
 - Public display name: **Ali** / **al0ke** only
