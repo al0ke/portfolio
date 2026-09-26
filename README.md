@@ -2,16 +2,17 @@
 
 Employer-facing cybersecurity portfolio for **Ali** (`al0ke`).
 
-Live production that currently resolves: [https://al0ke.vercel.app](https://al0ke.vercel.app)
+- Current old live URL: [https://al0ke.vercel.app](https://al0ke.vercel.app) (separate project until cutover)
+- Target project name: `al0ke-portfolio` → `https://al0ke-portfolio.vercel.app` (not deployed yet)
 
-`https://al0ke-portfolio.vercel.app` is not deployed yet (`DEPLOYMENT_NOT_FOUND`). See [DEPLOY.md](./DEPLOY.md).
+See [DEPLOY.md](./DEPLOY.md) for import, domain cutover, and About scrub steps.
 
 ## Stack
 
 - Next.js 15 (App Router)
 - TypeScript
 - Tailwind CSS v4
-- Framer Motion (light scroll reveals only)
+- Framer Motion (light scroll reveals; respects `prefers-reduced-motion`)
 
 ## Local
 
@@ -19,8 +20,6 @@ Live production that currently resolves: [https://al0ke.vercel.app](https://al0k
 npm install
 npm run dev
 ```
-
-Build:
 
 ```bash
 npm run build
@@ -30,5 +29,6 @@ npm start
 ## Content rules
 
 - Public display name: **Ali** / **al0ke** only
-- Texas internship wording: **Texas agency** / **Texas agency CISO office**
-- Public Code buttons only for verified public repos (currently `phishguard-agent`)
+- Texas internship wording: **Texas agency CISO office** / CSOC
+- Contact: GitHub `al0ke`, X `@0xal0ke`, optional mailto — no LinkedIn URL
+- Public Code buttons only when a verified public GitHub repo exists

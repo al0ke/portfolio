@@ -8,8 +8,8 @@ export function NowSection() {
         <p className="section-label">Now</p>
         <h2 className="section-title">Current focus</h2>
         <p className="section-copy">
-          Living status, not a static resume dump. Updated for Fall 2026 —
-          internship season, agent tooling, and public security shipping.
+          Living status, not a static resume dump. School, MCP skill work, and
+          the SOC / cyber search — honest and current.
         </p>
       </Reveal>
 

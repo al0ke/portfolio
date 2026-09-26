@@ -17,12 +17,13 @@ export function Hero() {
       </h1>
 
       <p className="mt-7 max-w-[34rem] text-[clamp(1.15rem,2.4vw,1.45rem)] font-medium leading-snug tracking-[-0.015em] text-[var(--fg)]">
-        Cybersecurity student building security tools and AI-assisted ops.
+        Cybersecurity student building practical AI agent skills and MCP
+        hardening tools.
       </p>
 
       <p className="mt-4 max-w-[32rem] text-[0.98rem] leading-relaxed text-[var(--muted)]">
-        Based in Austin. Focused on AppSec, GRC, and selected agent work —
-        with public shipping when the repo is ready.
+        ACC LAN Cyber Security in Austin. Seeking SOC and cyber roles — with
+        selected write-ups on agent security and prior CSOC work.
       </p>
 
       <div className="mt-9 flex flex-wrap gap-3">

@@ -8,13 +8,19 @@ export function ContactSection() {
         <p className="section-label">Contact</p>
         <h2 className="section-title">Say hello</h2>
         <p className="section-copy">
-          Open to cybersecurity, GRC, and AppSec conversations — internships,
-          collaborations, and thoughtful feedback on the work.
+          Open to SOC, cybersecurity, and agent-security conversations —
+          roles, collaborations, and thoughtful feedback on the work.
         </p>
       </Reveal>
 
       <Reveal delay={0.08}>
         <div className="mt-10 flex flex-wrap gap-3">
+          <a href={`mailto:${site.email}`} className="btn btn-primary">
+            Email
+            <span className="font-[family-name:var(--font-mono)] text-xs text-[var(--muted)]">
+              {site.email}
+            </span>
+          </a>
           {site.socials.map((social) => (
             <a
               key={social.href}

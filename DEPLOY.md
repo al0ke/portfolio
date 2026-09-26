@@ -2,46 +2,34 @@
 
 ## Current URL reality
 
-| URL | Status (audited) |
+| URL | Status |
 | --- | --- |
-| `https://al0ke.vercel.app` | Resolves (HTTP 200). Appears to be an **older separate Vercel project** still serving a previous portfolio build — not this repo (this repo was README-only until this PR). |
-| `https://al0ke-portfolio.vercel.app` | `DEPLOYMENT_NOT_FOUND` — project name / deployment does not exist yet. |
+| `https://al0ke.vercel.app` | **OLD deploy still HTTP 200** — separate Vercel project serving a previous portfolio. Not this repo until Ali re-points the domain. |
+| `https://al0ke-portfolio.vercel.app` | **`DEPLOYMENT_NOT_FOUND`** — project / deployment does not exist yet. |
 
-Prefer keeping **`al0ke.vercel.app`** healthy as the public URL. Optionally add `al0ke-portfolio` as a project name or alias after the first green build.
+## What Ali must click (after merging this PR)
 
-## Recommended: import this repo as `al0ke-portfolio`, then point `al0ke`
+1. **Merge** this PR into `main` on GitHub.
+2. **Vercel → Add New… → Project** → import **`al0ke/portfolio`**.
+3. Set the Vercel project name to **`al0ke-portfolio`** (creates `al0ke-portfolio.vercel.app` after the first green deploy).
+4. Framework: **Next.js**. Build: `npm run build`. Deploy Production.
+5. **Domain cutover for `al0ke.vercel.app`:**
+   - Open the **old** Vercel project that currently owns `al0ke.vercel.app`.
+   - Remove `al0ke.vercel.app` from that project (Settings → Domains), **or** transfer it.
+   - On the new **`al0ke-portfolio`** project → Settings → Domains → add `al0ke.vercel.app`.
+6. **GitHub About scrub:** repo → About (gear) → description:
 
-1. In Vercel → **Add New… → Project**.
-2. Import **`al0ke/portfolio`** from GitHub.
-3. Set project name to **`al0ke-portfolio`** (this unlocks `al0ke-portfolio.vercel.app` after deploy).
-4. Framework preset: **Next.js**. Build command `npm run build`, output default.
-5. Deploy. Confirm preview + `https://al0ke-portfolio.vercel.app`.
-6. To make **`al0ke.vercel.app`** serve *this* project instead of the old one:
-   - Open the **old** project that currently owns `al0ke.vercel.app`.
-   - Either remove that domain from the old project, **or** transfer/reassign the `al0ke` Vercel subdomain to the new `al0ke-portfolio` project (Project → Settings → Domains).
-   - Add domain `al0ke.vercel.app` on the new project if Vercel does not attach it automatically.
-7. Optional: add a custom domain later under the same Domains panel.
+   > Employer portfolio — Ali / al0ke
 
-## If you only want to rename an existing project
+   Remove any previous About text that included a surname.
 
-If Ali already has a Vercel project connected to this repo:
+## Optional rename path
 
-1. Project → **Settings → General → Project Name** → set to `al0ke-portfolio`.
-2. Project → **Settings → Domains** → ensure both `al0ke-portfolio.vercel.app` and (if desired) `al0ke.vercel.app` are attached.
-3. Redeploy Production.
+If a Vercel project is already linked to this repo: Settings → General → Project Name → `al0ke-portfolio`, then Domains as above, then Redeploy.
 
-## GitHub repo description (manual)
+## Post-deploy checklist
 
-`gh` write access is not available from this agent. In GitHub → **al0ke/portfolio → About → Settings (gear)**, set the description to:
-
-> Employer portfolio — Ali / al0ke
-
-(Remove any previous About text that included a surname.)
-
-## Post-deploy checklist for Ali
-
-- [ ] Confirm production serves this PR’s build (hero breath-line + Now + case studies).
-- [ ] Decide whether `al0ke.vercel.app` or `al0ke-portfolio.vercel.app` is canonical; redirect the other if needed.
+- [ ] Production HTML matches this PR (MCP skill case studies; no banned product names).
+- [ ] Canonical URL chosen (`al0ke.vercel.app` and/or `al0ke-portfolio.vercel.app`).
 - [ ] Replace case-study cover placeholders with real screenshots when ready.
-- [ ] Pin exact Now bullets if anything changed for Handshake / Hermes status.
-- [ ] PhishGuard demo is behind Basic auth (`401`) — expected; keep or document credentials separately (do not put secrets in this repo).
+- [ ] Confirm Gumroad / public repo status before adding purchase or Code links for the MCP skills.

@@ -8,8 +8,8 @@ export function ExperienceSection() {
         <p className="section-label">Experience</p>
         <h2 className="section-title">Recent role</h2>
         <p className="section-copy">
-          Internship work framed at the agency level — no agency product names
-          beyond Texas agency / CISO office.
+          Internship work at a Texas agency CISO office (CSOC) — framed at the
+          agency level only.
         </p>
       </Reveal>
 

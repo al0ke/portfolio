@@ -18,39 +18,48 @@ export type Project = {
 };
 
 /**
- * Project truth (verified against GitHub API):
- * - phishguard-agent: public + demo https://phishguard-plum.vercel.app
- * - Prism / OSINT: private (prism-osint) — case study OK, NO public Code link
- * - Do not treat third-party OSINT platform forks as Ali's public product code
- * - Hermes: not public — case study only
- * - Content Empire: archive only (not current Now work)
+ * Project truth:
+ * - MCP / Agent Skill Security Audit: portable SKILL.md product ($49 draft;
+ *   do not claim a live Gumroad listing). No public GitHub repo yet → write-up only.
+ * - MCP Secret Leak Check: free companion mini-skill (secrets-only). Write-up only.
+ * - Hermes / Prism: private write-ups — no public Code links.
+ * - Content Empire: archive only.
+ * - Do not feature third-party OSINT forks as product source.
  */
 export const projects: Project[] = [
   {
-    slug: "phishguard",
-    title: "PhishGuard Agent",
+    slug: "mcp-skill-audit",
+    title: "MCP / Agent Skill Security Audit",
     tagline:
-      "AI-powered phishing threat analysis for suspicious URLs, email content, and brand impersonation.",
+      "Portable defensive audit skill for MCP configs and agent skills — leaky tools, overbroad permissions, injected instructions.",
     status: "current",
     year: "2026",
-    coverLabel: "Threat analysis UI",
+    coverLabel: "Skill hardening report",
     problem:
-      "Analysts and students need a fast way to triage suspicious links and email paste-ins without jumping across VirusTotal, URL blocklists, and ad-hoc scripts.",
+      "Agent stacks ship with mcp.json tool lists and drop-in skills that are easy to misconfigure: secrets in plain configs, overbroad filesystem or shell tools, and skills that inject unexpected instructions into the model context.",
     approach:
-      "Built a Next.js App Router tool that accepts a URL or email body, pulls threat intel (VirusTotal, URLhaus), detects brand lookalikes, extracts IOCs, and returns an AI-assisted verdict with a risk score.",
+      "Building a portable SKILL.md that runs as a defensive audit: inspect MCP server configs, flag dangerous tool grants, review skill files for injection/exfiltration patterns, and produce a hardening report an operator can act on.",
     outcome:
-      "Public repo and live demo on Vercel. Useful as a portfolio AppSec artifact and a practical triage helper for phishing investigations.",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "VirusTotal", "Vercel"],
-    links: [
-      {
-        label: "Code",
-        href: "https://github.com/al0ke/phishguard-agent",
-      },
-      {
-        label: "Live demo",
-        href: "https://phishguard-plum.vercel.app",
-      },
-    ],
+      "Draft product framed as a paid portable skill ($49). Not claiming a live Gumroad listing yet — write-up and portfolio case study while packaging and distribution are finalized. No public Code button until a public repo exists.",
+    stack: ["SKILL.md", "MCP", "Agent tooling", "Security review", "Hardening"],
+    links: [],
+  },
+  {
+    slug: "mcp-secret-leak",
+    title: "MCP Secret Leak Check",
+    tagline:
+      "Free companion mini-skill — a secrets-only sniff test for MCP configs and skill files.",
+    status: "current",
+    year: "2026",
+    coverLabel: "Secrets sniff test",
+    problem:
+      "Before a full hardening pass, operators need a fast way to catch API keys, tokens, and credentials sitting in mcp.json, env stubs, or skill markdown.",
+    approach:
+      "A lightweight free mini-skill that focuses only on secret patterns: scan common MCP and skill paths, highlight likely leaks, and point to next steps without trying to replace a full audit.",
+    outcome:
+      "Positioned as a free lead / companion to the full MCP / Agent Skill Security Audit. Write-up only for now — no public Code link until a public repo ships.",
+    stack: ["SKILL.md", "MCP", "Secret scanning", "Developer tooling"],
+    links: [],
   },
   {
     slug: "hermes",
@@ -65,7 +74,7 @@ export const projects: Project[] = [
     approach:
       "Designing multi-agent flows with approval gates: research agents, triage helpers, and MCP-style IDE integrations so humans stay in the loop on anything that ships.",
     outcome:
-      "Active build focus for internship season. Repo stays private; this case study covers the problem framing and stack direction without claiming a public release.",
+      "Ongoing private build. This case study covers problem framing and stack direction without claiming a public release.",
     stack: ["Python", "Next.js", "Supabase", "MCP", "Agent tooling"],
     links: [],
   },
@@ -80,9 +89,9 @@ export const projects: Project[] = [
     problem:
       "OSINT work fragments across one-off scripts and SaaS panels. Operators need a coherent place to run modules, review findings, and keep OPSEC in view.",
     approach:
-      "Building a private investigation platform direction: modular collectors, AI-assisted analysis, and a real-time dashboard for domains, IPs, emails, phones, and usernames.",
+      "Private investigation platform direction: modular collectors, AI-assisted analysis, and a real-time dashboard for domains, IPs, emails, phones, and usernames.",
     outcome:
-      "Case-study status only. The working repo is private (prism-osint). No public Code button — forks of third-party OSINT platforms are not presented as product source.",
+      "Case-study status only. Working repo is private. No public Code button — third-party forks are not presented as product source.",
     stack: ["Python", "OSINT modules", "Dashboards", "Threat intel"],
     links: [],
   },
@@ -97,10 +106,10 @@ export const projects: Project[] = [
     problem:
       "Needed a way to research, draft, and schedule short-form posts with human approval before anything published.",
     approach:
-      "Stood up a multi-agent pipeline (research → draft → approval gates → schedule) powered by Hermes-style agent orchestration and a Next.js/Supabase control surface.",
+      "Stood up a multi-agent pipeline (research → draft → approval gates → schedule) with a Next.js/Supabase control surface.",
     outcome:
-      "Useful learning on agent ops and approval UX. The clipping / content-empire workflow has ended and is no longer part of the live Now focus.",
-    stack: ["Python", "Next.js", "Hermes Agent", "Supabase"],
+      "Useful learning on agent ops and approval UX. The clipping workflow has ended and is not part of the live Now focus.",
+    stack: ["Python", "Next.js", "Agent tooling", "Supabase"],
     links: [],
   },
 ];

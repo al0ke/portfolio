@@ -3,10 +3,10 @@ export const site = {
   handle: "al0ke",
   title: "Ali / al0ke — Cybersecurity Portfolio",
   description:
-    "Cybersecurity student in Austin building security tools and AI-assisted ops. Selected work in AppSec, GRC, and agent systems.",
+    "ACC LAN Cyber Security student in Austin building practical AI agent skills and MCP hardening tools. Seeking SOC and cyber roles.",
   url: "https://al0ke.vercel.app",
   location: "Austin, TX",
-  graduation: "2027",
+  email: "alifarttoosi98@gmail.com",
   socials: [
     {
       label: "GitHub",
@@ -23,34 +23,28 @@ export const site = {
 
 export const nowItems = [
   {
-    status: "Active",
-    title: "Internship hunt",
+    status: "School",
+    title: "ACC LAN Cyber Security",
     detail:
-      "Actively applying for cybersecurity, GRC, and AppSec internships on Handshake.",
+      "Cybersecurity student at Austin Community College (LAN Cyber Security track), based in Austin.",
   },
   {
     status: "Building",
-    title: "Hermes",
+    title: "MCP / skill hardening",
     detail:
-      "AI/ops agent work — multi-agent tooling for research, triage, and secure automation.",
+      "Building AI agent skills for MCP and skill hardening — free secrets sniff check plus a full defensive audit skill ($49 draft).",
   },
   {
-    status: "Shipping",
-    title: "PhishGuard",
+    status: "Seeking",
+    title: "SOC / cyber roles",
     detail:
-      "Polishing the public phishing analysis agent and live demo on Vercel.",
-  },
-  {
-    status: "Private",
-    title: "Prism OSINT",
-    detail:
-      "Continuing OSINT case-study work in a private repo — write-up on this site, no public code link.",
+      "Looking for SOC and cybersecurity roles. Recent experience with a Texas agency CISO office (CSOC).",
   },
   {
     status: "Systems",
-    title: "School + career",
+    title: "School + career systems",
     detail:
-      "CS coursework toward 2027 and keeping this portfolio as the employer-facing source of truth.",
+      "Keeping coursework, applications, and this portfolio aligned as the employer-facing source of truth.",
   },
 ] as const;
 
@@ -71,8 +65,8 @@ export const experience = [
 
 export const quickFacts = [
   "Austin, Texas",
-  "CS, graduating 2027",
+  "ACC LAN Cyber Security",
   "CSOC IT Risk Analyst (Texas agency)",
-  "Bug bounty (HackerOne)",
-  "Hermes agent builder",
+  "MCP / agent skill hardening",
+  "Seeking SOC / cyber roles",
 ] as const;
